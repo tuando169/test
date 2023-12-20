@@ -1,7 +1,41 @@
 .gitignore
 
 WHAT
-File .gitignore chỉ định các tệp không bị Git giám sát, quản lí trong 1 respository.
+File .gitignore chỉ định các tệp không bị Git giám sát, quản lí trong 1 respository
+
+WHO
+Người phát triển ứng dụng và quản lý codebase trong môi trường Git
+
+WHEN
+Khi người phát triển muốn loại bỏ các tệp tạm thời, tệp được tạo ra trong quá trình xây dựng, hoặc các tệp không cần thiết khác khỏi sự theo dõi của Git
+
+WHY
+Vì .gitignore giúp bỏ qua các tệp không cần thiết khỏi việc theo dõi và commit của Git, từ đó giúp giữ cho lịch sử commit được sạch sẽ và chỉ chứa thông tin quan trọng
 
 HOW
+Mỗi dòng trong tệp gitignore chỉ định một mẫu. Git sẽ kiểm tra các mâũ này để quyết định thứ tự bỏ qua.
+Thứ tự ưu tiên được quyết định như sau:
+- Mẫu được chỉ định trực tiếp từ dòng lệnh khi sử dụng các lệnh Git
+- Mẫu trong tệp .gitignore ở cùng thư mục hoặc các tệp .gitignore trong các thư mục cha có thể ghi đè lên nhau
+- Mẫu trong tệp GIT_DIR/info/exclude
+- Mẫu trong biến cấu hình core.excludesFile
 
+Định dạng mẫu:
+- Dấu "#" trước 1 dòng là 1 comment
+    VD: #Day la 1 comment
+
+- Đường dẫn tương đối: đường dẫn sẽ được tính từ folder chứa file gitignore
+    VD: test/temp
+
+- Dấu "*": chọn tất cả các File
+    VD:
+    temp/* #chọn tất cả các file trong thư mục temp
+
+- Dấu "?": dùng để khớp với các chuỗi kí tự cụ thể
+    VD: test??.txt #chọn những file bắt đầu bằng "test" và theo sau là 2 kí tự bất kì
+    
+- Tiền tố "!": Sử dụng để bao gồm lại một tệp đã bị loại trừ
+    VD:
+    temp/*
+    !temp/important.txt
+    #tất cả các file trong thư mục temp dc chọn ngoại trừ file important.txt
