@@ -1,0 +1,7 @@
+.gitignore
+
+WHAT
+File .gitignore chỉ định các tệp không bị Git giám sát, quản lí trong 1 respository.
+
+HOW
+
