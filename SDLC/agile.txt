@@ -1,0 +1,42 @@
+Triết lý Agile: làm tnao để nhanh chóng thích ứng, phản hồi với sự thay đổi
+
+A. 4 tuyên ngôn
+
+- cá nhân và sự tương tác > quy trình và công cụ
+- phần mềm chạy tốt > tài liệu đầy đủ
+- cộng tác vs khách hàng > đàm phán hợp đồng
+- phản hồi vs sự thay đổi > bám vào kế hoạch
+
+B. 12 nguyên tắc
+
+1. ưu tiên cao nhất là thoả mãn khách hàng thông qua việc chuyển giao sớm, liên tục các phần mềm có giá trị
+2. chào đón việc thay đổi yêu cầu
+3. các quy trình linh hoạt, tận dụng sự thay đổi trong các lợi thế cạnh tranh của khách hàng
+4. nhà kinh doanh và nhà phát triển làm việc cùng nhau hàng ngày trong mỗi dự án
+5. xây dựng các dự án xung quanh những cá nhân có động lực, cung cấp cho họ môi trường và sự hỗ trợ cần thiết và tin tưởng họ để hoàn thành công việc
+6. hội thoại trực tiếp là phương pháp tốt nhất để truyền đạt thông tin nội bộ
+7. phần mềm chạy tốt là thước đo của tiến độ
+8. các quy trình linh hoạt thúc đẩy phát triển bền vững
+9. liên tục quan tâm đến các kĩ thuật, thiết kế tốt để gia tăng sự linh hoạt
+10. sự đơn giản, nghệ thuật tối đa hoá việc chưa xong là căn bản
+11. các kiến trúc tốt, yêu cầu tốt nhất, thiết kế tốt nhất được làm ra bởi các nhóm tự tổ chức
+12. nhóm phát triển sẽ thường xuyên nghĩ làm sao để trở nên hiệu quả hơn, họ điều chỉnh, thay đổi các hành vi của mình cho phù hợp
+
+C. chiếc ô agile
+- phương pháp:
+    + scrum: 4 meeting
+        * planning
+        * stand up
+        * review
+        * retrospective
+    + extreme programming
+    + kanban
+    + scrum ban
+    + spotify: 4 meeting
+        * planning
+        * stand up
+        * review
+        * retrospective
+    + learn software development (lsd)
+
+NOTE: Tools: jira, trelo (kanban), github, excel

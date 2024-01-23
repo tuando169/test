@@ -1,0 +1,61 @@
+Software Development Life Cycle
+A. Outsource
+
+1. Requirement
+    - stakeholder(người quan tâm đến giá trị của sp, customer(outsource), những người góp vốn)
+    - business analyst: người phân tích nghiệp vụ, viết doc cho dự án
+    - project manager
+    - technical team (optional): dự đoán dự án để chuẩn bị
+    - quality assurance (QA) ~ tester: hiểu requirement để chuẩn bị testing strategy
+    - designer (UI/UX)
+    ==>output: requirement document
+    
+2. Analysis
+    - BA
+    - PM (project manager)
+    - system analyst/architect (SA): lường trước công nghệ sử dụng (design pattern, database, language, framework, microservice?,...)
+    - QA (optional)
+    ==> biểu đồ: usecase, class, sequence, activity,... (ngôn ngữ UML)
+    
+3. Design
+    - UI/UX designer
+    - SA/TL: thiết kế kiến trúc hệ thống, structure, tech stack, data flow, database, tương tác vs hệ thống khác
+    - PM
+    ==> high level design
+    
+4. Implementation (việc thực hiện)
+    - PM
+    - developer (frontend): người đưa sp đến vs người dùng, dùng analysis, UI/UX design
+    - backend engineer (backend), dùng analysis, system design
+    - devops
+    ==> source code
+    
+5. Testing
+    - QA, tester: kiểm tra các tính năng dc code có đáp ứng requirement (requirement chức năng, phi chức năng (load chậm)) ko
+    ==>Output
+        * manual test: file excel (kết quả từng testcase)
+        * automation test: cypress, jmeter, robot
+        * api test: postman collection, jmeter
+        * kết quả
+
+6. Hand over
+    - stakeholder (customer)
+    - training staff
+    - PM: xem có bàn giao chuẩn ko
+    - QA: test lần cuối trước khi bàn giao    
+    ==> document specialist: hướng dẫn người dùng, tài liệu hệ thống
+    
+7. Maintenance
+Giống 1 vòng bên trên:
+    - requirement
+    - analysis
+    - design
+    - implementation
+    - testing
+    - hand over
+
+B. Product
+Gồm tất cả những giai đoạn của outsource và có thêm:
+6.1 publish
+6.2 measure: thống kê số người tải, người mua,...
+6.3 learn

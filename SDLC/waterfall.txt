@@ -1,0 +1,51 @@
+A. WHAT
+1. Requirement
+    - Tài liệu SRS (tài liệu đặc tả)
+
+2. Design
+    - Tài liệu phân tích thiết kế:
+    - Biểu đồ UML: use cases, class, data flow
+    - Giao diện người dùng: figma
+    - High level design
+    - VD: biểu đồ sequence, biểu đồ use case
+
+3. Implement
+    - Viết code
+    - Code Frontend
+    - Code Backend: apis, job,…
+    - Thuật toán
+    
+4. Test
+    - unit test: test từng đơn vị (tính bằng hàm)
+    - integradtion test: test tích hợp (vd: chức năng login frontend tích hợp vs backend có chạy dc k)
+    - system test: test 1 luồng hoàn chỉnh sau khi hệ thống hoàn thành
+    - acceptance test: test lại lần cuối trước khi release
+
+5. Deploy
+    - chạy chương trình trên server production
+    - hệ thống dc truy cập qua internet
+
+6. Maintance
+    - sửa lỗi phát sinh sau khi deploy hệ thống mà người dùng phát hiện ra
+    - thường sẽ xuất hiện trong thời gian ngắn sau khi sản phẩm deploy
+
+B. HOW
+Thực hiện từng giai đoạn một, kết thúc giai đoạn hiện tại trước khi chuyển sang giai đoạn tiếp theo
+
+Ưu điểm:
+- dễ hiểu, dễ quản lí
+- phân chia rõ ràng các giao diện
+- kiểm soát thay đổi tốt
+
+Nhược điểm:
+- phát hiện lỗi muộn (lỗi thường phát hiện ở giai đoạn test và maintance)
+- khó khăn trong việc ước lượng thời gian và chi phí
+- ko linh hoạt
+
+Lỗi hồi quy: lỗi ko fix ngay ở giai đoạn đấy mà phải đi lên, hồi quy lại requirement, phân tích lại
+
+C. WHERE
+Phù hợp với những dự án có đặc điểm:
+- có requirement ổn định
+- dự án nhỏ, đơn giản
+- nhân sự có kinh nghiệm, ít gây sai sót
