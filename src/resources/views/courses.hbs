@@ -1,0 +1,28 @@
+<div class='mt-4'>
+  <div class='row gap-4 justify-content-center'>
+    {{#each courses}}
+
+      <div class='card' style='width: 18rem;'>
+        <div class='card-body'>
+          <a href='/courses/{{this.slug}}'>
+            <h5 class='card-title'>{{this.name}}</h5>
+          </a>
+          <p class='card-text'>{{this.description}}</p>
+          <a href='/courses/{{this._id}}/edit' class='btn btn-primary'>Edit</a>
+          <form
+            method='POST'
+            action='/courses/{{this._id}}?_method=DELETE'
+            class='d-inline-block'
+          >
+            <button
+              type='submit'
+              class='btn btn-primary'
+              data-bs-toggle='modal'
+              data-bs-target='#delete-course-modal'
+            >Delete</button>
+          </form>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
